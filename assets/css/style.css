@@ -315,3 +315,107 @@ body {
   display: flex;
   cursor: pointer;
 }
+
+#content .default.bg-team {
+  padding: 0;
+}
+
+.bg-team {
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 0;
+}
+
+#content .section-team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.section-team .sliders {
+  height: 100%;
+  width: 1000vw;
+}
+
+.section-team .slide {
+  height: 100%;
+  min-height: 300px;
+  width: 280px;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.section-team .slide-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #000;
+  padding: 30px;
+}
+
+.section-team-area .sliders-pointers {
+  height: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-team-area .sliders-pointers .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #b28756;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.section-team-area .sliders-pointers .active {
+  background-color: #b28756;
+}
+
+.section-team--avatar {
+  width: 150px;
+  height: auto;
+}
+
+.section-team--name {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.section-team--role {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.section-team--social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-team--social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 13px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+
+.section-team--social a:hover {
+  background-color: #b28756;
+}
