@@ -1,0 +1,186 @@
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+#header {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#header .flex {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+#header .logo {
+  width: 100px;
+}
+
+#header .container .logo .logo-img {
+  width: 80px;
+  height: 80px;
+  background-color: #b28756;
+  border-radius: 40px;
+}
+
+#header .menu {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+#header .menu .menu-list {
+  display: flex;
+}
+
+#header .menu .menu-list .menu-list-item a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #000;
+  font-size: 13px;
+}
+
+#header .menu .menu-list .menu-list-item a:hover,
+#header .menu .menu-list #active a {
+  border-bottom: 5px solid #b28756;
+  color: #ccc;
+  transition: 0.4s;
+}
+
+#content .banner {
+  height: calc(100vh - 100px);
+  background-color: #333;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  /* serve para que tudo que passar dessa largura, desse elemento será ocultada */
+  overflow: hidden;
+}
+
+#content .banner .sliders {
+  height: 100%;
+  width: 1000vw;
+}
+
+#content .banner .slide {
+  height: 100%;
+  width: 100vw;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content .banner .slide-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+#content .banner .slide-area .slide-area-tittle {
+  font-weight: 700;
+  font-size: 54px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#content .banner .slide-area .slide-area-tittle span {
+  color: #b28756;
+}
+
+#content .banner .slide-area .slide-area-desc {
+  margin: 20px 0 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#content .banner .slide-area a {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #b28756;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+#content .banner .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content .banner .sliders-pointers .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #b28756;
+  border-radius: 8px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#content .banner .sliders-pointers .active {
+  background-color: #b28756;
+}
+
+#content .default {
+  padding: 50px 0;
+}
+
+#content .default .section-tittle,
+#content .default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#content .default .section-tittle {
+  font-size: 20px;
+}
+
+#content .default .section-desc {
+  font-size: 12px;
+  color: #ccc;
+  margin: 10px 0 40px;
+}
+
+#content .default .section-body {
+  margin: auto;
+  background-color: #ccc;
+  min-height: 100px;
+}
+
+#content .default.light {
+  background-color: #f7f7f7;
+}
+
+#content .default.light .section-tittle {
+  color: #000;
+}
+
+#content .default.dark {
+  background-color: #000;
+}
+
+#content .default.dark .section-tittle {
+  color: #fff;
+}
