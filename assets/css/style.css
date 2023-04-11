@@ -120,7 +120,8 @@ body {
   font-size: 22px;
 }
 
-#content .banner .sliders-pointers {
+#content .banner .sliders-pointers,
+.clients .sliders-pointers {
   width: 100vw;
   height: 20px;
   position: absolute;
@@ -130,7 +131,8 @@ body {
   align-items: center;
 }
 
-#content .banner .sliders-pointers .pointer {
+#content .banner .sliders-pointers .pointer,
+.clients .sliders-pointers {
   width: 15px;
   height: 15px;
   border: 2px solid #b28756;
@@ -139,7 +141,8 @@ body {
   cursor: pointer;
 }
 
-#content .banner .sliders-pointers .active {
+#content .banner .sliders-pointers .active,
+.clients .sliders-pointers .active {
   background-color: #b28756;
 }
 
@@ -418,4 +421,165 @@ body {
 
 .section-team--social a:hover {
   background-color: #b28756;
+}
+
+#content .section-testimonials {
+  overflow: hidden;
+}
+
+#content .section-body .section-testimonials .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-body .section-testimonials .slide {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+}
+
+.section-body .section-testimonials .slide-area {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-body .section-testimonials--avatar {
+  width: 100px;
+}
+
+.section-body .section-testimonials--name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 30px;
+}
+
+.section-body .section-testimonials--role {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 8px 0 30px;
+}
+
+.section-body .section-testimonials--img {
+  margin-bottom: 15px;
+  width: 20px;
+}
+.section-body .section-testimonials--quote p {
+  line-height: 1.5;
+  color: #999;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.testimonials .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.testimonials .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #b28756;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.testimonials .pointer.active {
+  background-color: #b28756;
+}
+
+#content .companies {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.companies .section-body .section-companies--area {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.section-companies--area .section-company {
+  flex: 1;
+  text-align: center;
+}
+
+.section-body .section-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-price .section-price--item {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  height: 345px;
+  width: 260px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.section-price .section-price--item:last-child {
+  margin-right: 0;
+}
+
+.section-price--item-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.section-price--item-money {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
+
+.section-price--item-period {
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.section-price--item-list p {
+  color: #555;
+  line-height: 1;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.section-price--item-list .line-bar {
+  width: 15px;
+  height: 1px;
+  background-color: #555;
+  display: block;
+  margin: 0 auto;
+}
+
+.button--dark {
+  margin-top: 20px;
+  background-color: #000;
+}
+.button--dark:hover {
+  background-color: #b28756;
+}
+
+.btn-premium {
+  margin-top: 20px;
 }
