@@ -14,3 +14,12 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+fieldset,
+input,
+textarea,
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
